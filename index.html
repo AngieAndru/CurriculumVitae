@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de vida – Angela Andrea Suarez Arango</title>
+  <meta name="description" content="Hoja de vida (CV) de Angela Andrea Suarez Arango – Ingeniera de Sistemas y Docente." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#1f2937; --muted:#6b7280; --accent:#ec4899; --card:#f8fafc; --line:#e5e7eb;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0b0f14; --text:#e5e7eb; --muted:#9ca3af; --accent:#f472b6; --card:#111827; --line:#374151}
+    }
+    html,body{height:100%}
+    body{margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    .wrap{max-width:1000px; margin:40px auto; padding:0 20px}
+    header{
+      display:grid; gap:20px; align-items:center;
+      grid-template-columns: 120px 1fr;
+      background:var(--card); padding:24px; border-radius:18px; border:1px solid var(--line);
+    }
+    .avatar{
+      width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg,var(--accent),#8b5cf6);
+      display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:40px; letter-spacing:1px;
+      overflow:hidden; border:2px solid rgba(255,255,255,.2)
+    }
+    .avatar img{width:100%; height:100%; object-fit:cover; display:block}
+    h1{margin:0 0 4px 0; font-size:32px}
+    .subtitle{margin:0; color:var(--muted); font-weight:500}
+    .chips{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:rgba(236,72,153,.12); color:#9d174d; border:1px solid rgba(236,72,153,.35); padding:6px 10px; border-radius:999px; font-size:12px}
+    @media (prefers-color-scheme: dark){ .chip{color:#f9a8d4} }
+
+    .grid{display:grid; grid-template-columns: 1fr 2fr; gap:24px; margin-top:24px}
+    aside, main{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:24px}
+    section + section{margin-top:22px}
+    h2{font-size:18px; margin:0 0 12px 0}
+    h3{font-size:16px; margin:0}
+    .muted{color:var(--muted)}
+    .list{list-style:none; padding:0; margin:0}
+    .list li{padding:10px 0; border-top:1px dashed var(--line)}
+    .list li:first-child{border-top:0}
+
+    .item{display:grid; gap:6px}
+    .item .when{font-size:12px; color:var(--muted)}
+    .item .where{font-weight:600}
+
+    .contact a{color:inherit; text-decoration:none}
+    .contact a:hover{color:var(--accent)}
+
+    .toolbar{display:flex; gap:10px; margin:16px 0}
+    .btn{border:1px solid var(--line); background:var(--bg); padding:8px 12px; border-radius:10px; cursor:pointer}
+    .btn:hover{border-color:var(--accent)}
+
+    footer{margin:24px 0; color:var(--muted); font-size:12px; text-align:center}
+
+    @media (max-width: 860px){ .grid{grid-template-columns: 1fr} header{grid-template-columns:80px 1fr} .avatar{width:80px;height:80px; font-size:28px}}
+
+    /* Print */
+    @media print{
+      .wrap{margin:0; padding:0}
+      header, aside, main{border:0}
+      .toolbar{display:none}
+      body{background:white}
+      a{color:inherit; text-decoration:none}
+    }
+  </style>
+  <script>
+    function printCV(){window.print()}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" aria-label="Foto o iniciales">
+        <!-- Reemplaza la imagen debajo con tu foto cuadrada, por ejemplo foto.jpg -->
+        <img src="Angela.jpg" alt="Foto de perfil de Angela Andrea Suarez Arango" />
+        
+      </div>
+      <div>
+        <h1>Angela Andrea Suarez Arango</h1>
+        <p class="subtitle">Ingeniera de Sistemas · Docente · Asistente Administrativo</p>
+        <div class="chips">
+          <span class="chip">Docencia universitaria</span>
+          <span class="chip">Programación</span>
+          <span class="chip">Bases de datos</span>
+          <span class="chip">Emprendimiento digital</span>
+        </div>
+        <div class="toolbar">
+          <button class="btn" onclick="printCV()">Imprimir / Guardar PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid" role="main">
+      <aside>
+        <section class="contact">
+          <h2>Contacto</h2>
+          <ul class="list">
+            <li><strong>Celular:</strong> <a href="tel:+573113617622">+57 311 361 7622</a></li>
+            <li><strong>Correo:</strong> <a href="mailto:angela.suarez@ucaldas.edu.co">angela.suarez@ucaldas.edu.co</a></li>
+            
+        </section>
+
+        <section>
+          <h2>Educación</h2>
+          <div class="item">
+            <div class="where">Universidad Cooperativa de Colombia</div>
+            <div class="when">Ingeniería de Sistemas · 2008</div>
+            <div class="muted">Tarjeta Profesional: 17255165191</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Acerca de mí</h2>
+          <p>Soy una persona organizada, responsable, autónoma, y pensamiento estratégico. Disfruto el trabajo colaborativo, tengo capacidad de adaptación y alta disposición para el aprendizaje.</p>
+        </section>
+
+        <section>
+          <h2>Referencias</h2>
+          <ul class="list">
+            <li>
+              <div class="item">
+                <div class="where">Martha London</div>
+                <div class="muted">Ingeniera de Sistemas · Animadora 3D</div>
+                <div class="when">Cel. 319 621 1179</div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="where">Seider de Jesús Candamil</div>
+                <div class="muted">Ingeniero de Sistemas · Coordinador de Sistemas (Emergía)</div>
+                <div class="when">Cel. 318 629 4846</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main>
+        <section>
+          <h2>Experiencia laboral</h2>
+          <ul class="list">
+            <li>
+              <div class="item">
+                <h3>Docente catedrática</h3>
+                <div class="where">Universidad de Caldas</div>
+                <div class="when">2024 – Actualidad</div>
+                <p>Docente de Programación Creativa I y II, Tecnología Digital, Fundamentos de almacenamiento de la información, Bases de Datos I, Emprendimiento Digital, Diseño Web, Ética digital, y Fundamentos de redes.</p>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <h3>Docente</h3>
+                <div class="where">Secretaría de Educación de Caldas</div>
+                <div class="when">Agosto 2023 – Noviembre 2023</div>
+                <p>Docente de tecnología y emprendimiento con habilidades para planear, ajustar y ejecutar planes de estudio y actividades formativas.</p>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <h3>Asistente Administrativo</h3>
+                <div class="where">Marcelo Villegas</div>
+                <div class="when">Mayo 2006 – Agosto 2023</div>
+                <p>Funciones de contabilidad, exportaciones, facturación y nómina electrónicas, proveedores, compras, ventas, cartera, PILA y conciliaciones bancarias; orientación al servicio.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Seminarios, diplomados, cursos y otros</h2>
+          <ul class="list">
+            <li><strong>Diplomado Líderes Educativos Digitales</strong> – Universidad de la Guajira · Junio 2025</li>
+            <li><strong>Diplomado Líderes Educativos Digitales</strong> – Comunidad Internacional de Profesores Cerebrote · Diciembre 2024</li>
+            <li><strong>Curso Competencias transversales</strong> – Caja de Compensación Familiar de Caldas · Feb 2024</li>
+            <li><strong>Curso Docencia y Pedagogía</strong> – Colegiaturas del Café · Feb 2024</li>            
+            <li><strong>Diplomado en TIC</strong> – Unitécnica · 2024</li>
+            <li><strong>Diplomado en Docencia y Didáctica Universitaria</strong> – Politécnico Superior · Mar 2024</li>
+            <li><strong>Fundamentos en Analítica de datos</strong> – DS4A Colombia (MinTIC) · Dic 2022</li>
+            <li><strong>Sistema de Gestión de SST (SG-SST)</strong> – SENA Virtual · 2016</li>
+            <li><strong>Diplomado en Desarrollo de Software</strong> – Universidad de Manizales / Manizales Vive Digital · 2014</li>
+            <li><strong>Curso Android</strong> – People Contact · 2012</li>
+            <li><strong>Diplomado de regreso a la programación</strong> – C++ /.NET / Java · Universidad de Caldas · 2012</li>
+            <li><strong>Administración de bases de datos con Microsoft Access</strong> – SENA Virtual · 2009</li>
+            <li><strong>Seminario: Redes de datos</strong> – Universidad Cooperativa de Colombia · 12/12/2008</li>
+            <li><strong>Seminario: Gestión social</strong> – Universidad Cooperativa de Colombia · 30/03/2006</li>
+            <li><strong>Seminario: Seguridad informática</strong> – Universidad Cooperativa de Colombia · 22/11/2002</li>
+            <li><strong>Técnico en Programación y Análisis de Sistemas</strong> – Politécnico Central (Bogotá) · 23/11/1996</li>
+            
+          </ul>
+        </section>
+
+        <section>
+          <h2>Otros proyectos y experiencias</h2>
+          <ul class="list">
+            <li>
+              <div class="item">
+                <div class="where">Directora – Proyecto Brigadas Tecnológicas Rurales</div>
+                <div class="when">Villamaría, 2006 – Universidad Cooperativa de Colombia (Seccional Villamaría Caldas)</div>
+              </div>
+            </li>
+            <li>Mantenimiento de computadores</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Declaración</h2>
+          <p class="muted">Hago constar que la información aquí consignada es verídica y puede ser comprobada por cualquier persona.</p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      Última actualización: 20 de agosto de 2025 · © Angela Andrea Suarez Arango
+    </footer>
+  </div>
+
+  <!-- Datos estructurados opcionales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angela Andrea Suarez Arango",
+    "jobTitle": "Ingeniera de Sistemas y Docente",
+    "email": "mailto:angela.suarez@ucaldas.edu.co",
+    "telephone": "+57-311-361-7622",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Villamaría",
+      "addressRegion": "Caldas",
+      "addressCountry": "CO"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Cooperativa de Colombia"
+    }
+  }
+  </script>
+</body>
+</html>
